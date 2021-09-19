@@ -1,0 +1,449 @@
+/* GGG */
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+/* //////////////////////////////////header\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+header .navLogo{
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+header nav ul{
+    margin: 0 auto;
+    width: fit-content;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 12px;
+}
+header nav ul li a{
+    font-size: 16px;
+    color: #111;
+}
+/* ///////////////////////////////index\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.indexBanner{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/indexBanner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.indexBanner h1{
+    line-height: 70px;
+    margin: 0 ;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(23, 92, 54);
+    text-align: center;
+}
+
+#weHaveIt{
+    font-size: 1.5em;
+    color: rgb(24, 155, 83);
+}
+
+.bestSellers, .newStock, .reviews, .books{
+    width: 100%;
+    display: block;
+}
+
+.bestSellers h3, .newStock h3, .reviews h3, .books h3{
+    padding: 20px;
+    font-size: 2em;
+}
+.reviews h3{
+    padding: 0;
+    font-size: 2em;
+}
+.reviews .reviewCard{
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.dotContainer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotContainer .active, .dot:hover {
+    background-color: #717171;
+}
+
+.reviewCard q {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.author {
+    color: cornflowerblue;
+}
+  
+.slideShowContainer{
+    position: relative;
+    background: #f3f3f3;
+}
+
+/* //////////////////////////////////Books\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.booksBanner{
+    width: 100%;
+    height: calc(60vh - 120px);
+    background-image: url('../img/booksBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.booksBanner h1{
+    line-height: 30px;
+    margin: 0 ;
+    font-size: 23px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    padding: 20vh 0 0 0 ;
+}
+
+.productCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;
+    text-align: center;
+    margin: 20px 0  20px 20px ;
+    display: inline-block;
+}
+
+.productCard h4{
+    font-weight: 400;
+}
+
+.productCard p{
+    padding: 10px;
+}
+
+.bookName{
+    font-size: 2em;  
+    font-weight: 700;
+}
+
+.productCard img{
+    width: 35%;
+    float: left;
+}
+
+.productCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.productCard button a{
+    color: white;
+    padding: 20px;
+}
+
+.books{
+    padding: 0 0 0 15px;
+}
+
+/* ////////////////////////////////ABOUT\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.aboutDiscription{
+    padding: 25px;
+}
+
+.aboutBanner{
+    width: 100%;
+    height: calc(60vh - 120px);
+    background-image: url('../img/aboutBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ////////////////////////////////CONTACT US\\\\\\\\\\\\\\\\\\\\\\\ */
+.contactBanner{
+    width: 100%;
+    height: calc(100vh - 175px);
+    background-image: url('../img/contactBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contactForm{
+    position: absolute;
+    margin: 15vh 0 0 25px;
+    max-width: 70%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+}
+input[type=text], textarea {
+    width: 100%; 
+    padding: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    max-height:200px
+}
+input[type=submit] {
+    background-color: #006699;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type=submit]:hover {
+    background-color: #df0024;
+}
+  /* /////////////////////////////Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+footer{
+    width: calc(100% - 80px);
+    padding: 10px 40px;
+    background-color: #111;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 auto;
+
+}
+footer ul li a{
+    color: white;
+    padding: 0 5px;
+    text-align: center;
+}
+/* //////////////////////////payment\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.paymentBanner{
+    width: 100%;
+    height: calc(100vh - 171px);
+    background-image: url('../img/PaymentBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.paymentForm{
+    position: absolute;
+    margin: 5%;
+    max-width: 60%;
+    padding: 30px;
+    background-color: rgba(212, 212, 212, 0.945);
+    border-radius: 15px;
+}
+.paymentForm label{
+    float: left;
+}
+.paymentForm select{
+    width: 100%;
+    float: left;
+}
+.acceptedCards{
+    max-width: 100%;
+}
+.paymentBanner .paymentForm p{
+    color: #292929;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px;
+}
+#cardType, #expiryMonth, #expiryYear, input[type=text]  {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+    max-height:200px
+}
+#expiryMonth, #expiryYear {
+    width: 30%;
+}
+input[type=submit] {
+    background-color: #006699;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type=submit]:hover {
+    background-color: #df0024;
+}
+.paymentForm h1{
+    font-weight: 400;
+}
+.active{
+    border-bottom:  2px #df0024 solid;
+}
+
+@media only screen and ( min-width: 1000px){
+    .paymentForm{
+        max-width: 600px;
+        padding: 30px;
+    }
+    header .navLogo{
+        margin: 15px 0 0 10vw;
+        font-size: 60px;
+        text-align: left;
+        padding: 0 30px;
+        float: left;
+    }
+    header nav ul{
+        margin: 0;
+        width: 100%;
+    }
+    header nav ul li{
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 100px;
+    }
+    header nav ul li a{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 15px 20px;
+        transition: 0.4s;
+    }
+    header nav ul li a:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+    }
+    main{
+        margin: 0 auto;
+        max-width: 1500px;
+        background-color: white;
+    }
+    .indexBanner h1{
+        padding: 25vh 0 0 25vh;
+        line-height: 90px;
+        font-size: 80px;
+        text-align: left;
+    }
+    .bestSellers, .newStock, .books{
+        margin: 5vw;
+    }
+    
+    .bestSellers h3, .newStock h3, .reviews h3{
+        font-size: 4em;
+    }
+    .reviews h3{
+        margin: 5vw;
+    }
+    .productCard{
+        width: 40%;
+        transition: 0.4s;
+    }
+    .reviews .reviewCard{
+        max-width: 700px; 
+    }
+    .reviews .reviewCard h4{
+        font-size: 1.5em;
+    }
+    .reviews .reviewCard h5{
+        font-size: 1em;
+    }
+    .reviews .reviewCard p{
+        font-size: 1em;
+    }
+
+    .scrollingContainer{
+
+        white-space: unset;
+    }
+    .box{
+        margin: 60px;
+    }
+    .booksBanner h1{
+        padding: 20vh;
+    }
+    .productCard:hover{
+        transform: scale(1.1);
+    }
+
+    .contactForm{
+        margin: 25vh 0 0 10vw;
+    }
+
+    .reviews .reviewCard{
+        margin: 0 auto;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+
+
+    #expiryContainer{
+        line-height: 50px;
+    }
+}
